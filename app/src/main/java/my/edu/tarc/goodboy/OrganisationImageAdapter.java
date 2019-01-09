@@ -3,6 +3,8 @@ package my.edu.tarc.goodboy;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +41,8 @@ public class OrganisationImageAdapter extends PagerAdapter {
         imageView.setImageResource(mImageIds[position]);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 Intent organisationDetails = new Intent(view.getContext(), DisplayOrganisationDetails.class);
                 organisationDetails.putExtra("position",position);
                 v.getContext().startActivity(organisationDetails);

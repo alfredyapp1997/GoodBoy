@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
 
     <application
         android:allowBackup="true"
@@ -22,14 +23,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".DisplayOrganisationDetails"
+            android:label="OrganisationDetails"
             android:parentActivityName=".MainActivity">
         </activity>
 
         <activity android:name=".DisplayEventDetails"
+            android:label="EventDetails"
             android:parentActivityName=".MainActivity">
         </activity>
 
+        <activity android:name=".Repeating_Activity"/>
+        <receiver android:name=".Notification_receiver"/>
     </application>
 
 </manifest>
