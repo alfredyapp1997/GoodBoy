@@ -214,6 +214,20 @@ public class MainActivity extends AppCompatActivity
 
             fragmentTransaction.commit();
         }
+        else if (id == R.id.nav_register) {
+            setTitle("Register");
+
+            FragmentManager fragmentManager1 = getSupportFragmentManager();
+
+            FragmentTransaction fragmentTransaction = fragmentManager1.beginTransaction();
+
+            RegisterFragment registerFragment = new RegisterFragment();
+
+            fragmentTransaction.replace(R.id.fragment_content,registerFragment);
+
+            fragmentTransaction.commit();
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
