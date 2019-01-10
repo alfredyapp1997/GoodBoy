@@ -155,7 +155,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Gender:"
@@ -170,7 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="38dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Age:"
@@ -299,7 +299,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextRcontactno" />
 
     <RadioGroup
-        android:id="@+id/radioGroupGender"
+        android:id="@+id/radioGroupDogGender"
         android:layout_width="169dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -329,24 +329,23 @@
 
     <EditText
         android:id="@+id/editTextRage"
-        android:layout_width="163dp"
-        android:layout_height="34dp"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroupGender" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDogGender" />
 
     <Button
         android:id="@+id/buttonRegister"
-        android:layout_width="102dp"
-        android:layout_height="38dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"

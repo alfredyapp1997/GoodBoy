@@ -52,7 +52,7 @@ public class RegisterFragment extends Fragment {
         editTextRcontactno = view.findViewById(R.id.editTextRcontactno);
         editTextRicno = view.findViewById(R.id.editTextRicno);
         editTextRage = view.findViewById(R.id.editTextRage);
-        radioGroupGender = view.findViewById(R.id.radioGroupGender);
+        radioGroupGender = view.findViewById(R.id.radioGroupDogGender);
         radioButtonMale = view.findViewById(R.id.radioButtonMale);
         radioButtonFemale = view.findViewById(R.id.radioButtonFemale);
         radioGroupAccountType = view.findViewById(R.id.radioGroupAccountType);
@@ -213,5 +213,5 @@ public class RegisterFragment extends Fragment {
             e.printStackTrace();
         }
 
-}
+    }
 }

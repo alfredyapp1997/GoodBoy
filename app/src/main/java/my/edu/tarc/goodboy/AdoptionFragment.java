@@ -3,7 +3,10 @@ package my.edu.tarc.goodboy;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +36,28 @@ public class AdoptionFragment extends Fragment {
         radioGroupAdoption = view.findViewById(R.id.radioGroupAdoption);
         radioButtonBreed = view.findViewById(R.id.radioButtonBreed);
         radioButtonOrganization = view.findViewById(R.id.radioButtonOrganization);
+
+
+
+        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.floatingActionButtonAddDog);
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                getActivity().setTitle("AddDog");
+
+                FragmentManager fragmentManager1 = getActivity().getSupportFragmentManager();
+
+                FragmentTransaction fragmentTransaction = fragmentManager1.beginTransaction();
+
+                AddDogFragment addDogFragment = new AddDogFragment();
+
+                fragmentTransaction.replace(R.id.fragment_content,addDogFragment);
+
+                fragmentTransaction.commit();
+            }
+        });
 
         return view;
     }
